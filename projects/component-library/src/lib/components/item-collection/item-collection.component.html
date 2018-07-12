@@ -1,0 +1,12 @@
+<div class='item-collection'>
+  <div *ngIf="items!=undefined && items!=null">
+    <div *ngFor="let item of items">
+      <app-item>{{item.title}}</app-item>
+    </div>
+  </div>
+  <div class="test-class" *ngIf="items==undefined || items==null">
+    No items
+  </div>
+</div>
+
+HELLO!
