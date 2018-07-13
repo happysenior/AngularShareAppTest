@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { ComponentLibraryModule } from 'component-library'
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,7 +13,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ComponentLibraryModule
+    ComponentLibraryModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
