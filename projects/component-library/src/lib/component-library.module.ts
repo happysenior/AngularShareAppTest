@@ -11,6 +11,6 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     CommonModule
   ],
   declarations: [ComponentLibraryComponent, ItemComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],
-  exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent]
+  exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent]
 })
 export class ComponentLibraryModule { }
