@@ -6,11 +6,15 @@ import { ItemCollectionComponent } from './components/item-collection/item-colle
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    NgbModule.forRoot()
   ],
   declarations: [ComponentLibraryComponent, ItemComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],
-  exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent]
+  exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],
+  bootstrap: [ComponentLibraryComponent]
 })
 export class ComponentLibraryModule { }
