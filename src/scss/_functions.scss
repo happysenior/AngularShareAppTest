@@ -1,0 +1,14 @@
+//HSL (Hue, saturation and Lightness) this function changes text to white if below 40 ligtness. Anything above 40 lightness is black.
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+      @return #000000; // Lighter backgorund, return dark color
+    } @else {
+      @return #ffffff; // Darker background, return light color
+    }
+  }
+
+//To use the above function - add this code to the scss file where required
+//   .class-with-grey-bg {
+//     background-color:$dark-grey;
+//     color: set-text-color($dark-grey); //text color will depend what is inside of set-text-color().
+// }

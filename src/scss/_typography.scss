@@ -1,0 +1,96 @@
+/*Vic-font*/
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-ExtraLight.eot');
+    src: url('../assets/font-vic/hinted-VIC-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-ExtraLight.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-ExtraLight.woff') format('woff'), url('../assets/font-vic/hinted-VIC-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-ExtraLightItalic.eot');
+    src: url('../assets/font-vic/hinted-VIC-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-ExtraLightItalic.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-ExtraLightItalic.woff') format('woff'), url('../assets/font-vic/hinted-VIC-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-Light.eot');
+    src: url('../assets/font-vic/hinted-VIC-Light.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-Light.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-Light.woff') format('woff'), url('../assets/font-vic/hinted-VIC-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-LightItalic.eot');
+    src: url('../assets/font-vic/hinted-VIC-LightItalic.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-LightItalic.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-LightItalic.woff') format('woff'), url('../assets/font-vic/hinted-VIC-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-Regular.eot');
+    src: url('../assets/font-vic/hinted-VIC-Regular.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-Regular.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-Regular.woff') format('woff'), url('../assets/font-vic/hinted-VIC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-Italic.eot');
+    src: url('../assets/font-vic/hinted-VIC-Italic.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-Italic.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-Italic.woff') format('woff'), url('../assets/font-vic/hinted-VIC-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-Medium.eot');
+    src: url('../assets/font-vic/hinted-VIC-Medium.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-Medium.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-Medium.woff') format('woff'), url('../assets/font-vic/hinted-VIC-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-MediumItalic.eot');
+    src: url('../assets/font-vic/hinted-VIC-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-MediumItalic.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-MediumItalic.woff') format('woff'), url('../assets/font-vic/hinted-VIC-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-SemiBold.eot');
+    src: url('../assets/font-vic/hinted-VIC-SemiBold.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-SemiBold.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-SemiBold.woff') format('woff'), url('../assets/font-vic/hinted-VIC-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-SemiBoldItalic.eot');
+    src: url('../assets/font-vic/hinted-VIC-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-SemiBoldItalic.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-SemiBoldItalic.woff') format('woff'), url('../assets/font-vic/hinted-VIC-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-Bold.eot');
+    src: url('../assets/font-vic/hinted-VIC-Bold.eot?#iefix') format('embedded-opentype'), url('../assets/font-vic/hinted-VIC-Bold.woff2') format('woff2'), url('../assets/font-vic/hinted-VIC-Bold.woff') format('woff'), url('../assets/font-vic/hinted-VIC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VIC';
+    src: url('../assets/font-vic/hinted-VIC-BoldItalic.eot');
+    src: url('../assets/font-vic/hinted-VIC-BoldItalic.eot?#iefix') format('embedded-opentype'), /*url('../assets/font-vic/hinted-VIC-BoldItalic.woff2') format('woff2'),*/ url('../assets/font-vic/hinted-VIC-BoldItalic.woff') format('woff'), url('../assets/font-vic/hinted-VIC-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
