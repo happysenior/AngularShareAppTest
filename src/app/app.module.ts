@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { ComponentLibraryModule } from 'component-library'
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SidebarModule } from 'ng-sidebar';
 
 import { AppComponent } from './app.component';
 
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     ComponentLibraryModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

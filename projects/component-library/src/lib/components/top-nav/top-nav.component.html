@@ -1,21 +1,19 @@
-<div class="container-fluid">
-    <div class="row">
-		<div class="col-md-6 top-nav-bg">
-				<p>
-            This area should have a red background referenced from this component's scss file
-				</p>
-    </div>
-        <div class="col-md-6 top-nav-bg-2">
-				<p>
-            This component's scss overwrites the shared app style.scss
-				</p>
-		</div>
-    </div>
+<!-- Navigation -->
+<div class="fw-top-container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button (click)="_toggleSidebar()">Toggle sidebar</button>
+        <a class="navbar-brand" href="#">FFMVic Events Prototype</a>
+        <button class="navbar-toggler" type="button"
+                (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarNavAltMarkup">
+            <div class="nav navbar-nav navbar-right">
+                <a class="nav-item nav-link" href="#">Event List</a>
+                <a class="nav-item nav-link" href="#">New Event</a>
+                <a class="nav-item nav-link" href="#">Event Details</a>
+            </div>
+        </div>
+    </nav>
 </div>
-
-<!--ng-bootstrap test-->
-<p>
-    <ngb-alert [dismissible]="false">
-        <strong>Warning!</strong> Better check yourself, you're not looking too good.
-    </ngb-alert>
-</p>
