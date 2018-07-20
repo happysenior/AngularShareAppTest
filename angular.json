@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/scss/global-style.scss"
             ],
             "stylePreprocessorOptions": {

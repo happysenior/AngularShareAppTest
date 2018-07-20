@@ -7,11 +7,13 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   imports: [
     CommonModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    SidebarModule.forRoot()
   ],
   declarations: [ComponentLibraryComponent, ItemComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],
   exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],

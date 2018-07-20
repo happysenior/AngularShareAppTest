@@ -1,3 +1,18 @@
-<p>
-  side-nav works!!!
-</p>
+<!-- Container for sidebar(s) + page content -->
+<ng-sidebar-container style="height: calc(100vh - 50px);">
+
+    <!-- A sidebar -->
+    <ng-sidebar class="custom" [(opened)]="_opened" position='left' dock='true' dockedSize='50px' mode='push'>
+        <ul>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+            <li>Menu Item</li>
+        </ul>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+        <button (click)="_toggleSidebar()">Toggle sidebar</button>
+        <app-item-collection></app-item-collection>
+    </div>
+</ng-sidebar-container>
