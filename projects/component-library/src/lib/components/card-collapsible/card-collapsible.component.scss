@@ -1,0 +1,14 @@
+@import "../../../scss/_functions.scss";
+@import "../../../scss/_variables.scss";
+
+.card {
+    -webkit-box-shadow: $container-shadow;
+    box-shadow: $container-shadow;
+    border: 0;
+
+    h5 {
+        margin: auto;
+        margin-left: 0;
+    }
+}
+

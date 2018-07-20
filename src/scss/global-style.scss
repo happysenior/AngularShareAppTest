@@ -36,26 +36,28 @@ html, body {
         transition-delay: 2s;/*if you want a delay*/
     }
 
-    //TODO: figure out how to stop this from overriding other buttons ie: btn-lg
-    // &:active {
-    //     padding-top: 0.445rem;
-    //     padding-bottom: 0.305rem;
-    // }
-
-    // -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
-    // box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    &.btn-util {
+        color: #424242;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        padding: 6px 0px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.42857;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
 
 }
 
-
-.main-content-area {
-    background-color: $content-area-bg;
-    min-height: calc(100vh - 114px);
-}
+//sidebar
 
 .ng-sidebar--left {
-    background: $side-nav-bg;
     width: 12rem;
+    background: $side-nav-bg;
+    -webkit-box-shadow: $nav-bar-shadow;
+    box-shadow: $nav-bar-shadow;
 
     ul {
         margin: 0;
@@ -63,7 +65,7 @@ html, body {
 
         a {
             padding-left: 20px;
-            color: black;
+            color: $tundora;
 
             i {
                 padding-right: 13px;
@@ -74,6 +76,25 @@ html, body {
     }
 }
 
+//alters bootstrap default row and column padding and margin within the content area only
+.main-content-area {
+    background-color: $content-area-bg;
+    min-height: calc(100vh - 114px);
+    padding: 10px 20px 20px 20px;
+
+    & > .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    & > .row [class*='col-'] {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
 .main-footer-area {
     height: 50px;
+    padding: 20px;
 }
+

@@ -2,7 +2,7 @@
 <ng-sidebar-container style="height: calc(100vh - 50px);">
 
         <!-- A sidebar -->
-        <ng-sidebar class="custom" [(opened)]="_opened" opened='true' position='left' dock='true' dockedSize='50px' mode='push'>
+        <ng-sidebar class="left-nav-ffm" [(opened)]="_opened" opened='true' position='left' dock='true' dockedSize='50px' mode='push'>
             <ul>
                 <li class="nav-item user-nav-item">
                     <a class="nav-link" href="#">
@@ -30,11 +30,34 @@
         <!-- Page content -->
         <div ng-sidebar-content>
             <div class="main-content-area">
-                <button (click)="_toggleSidebar()">Toggle sidebar</button>
+                <button (click)="_toggleSidebar()" class="btn btn-light">Toggle sidebar</button>
                 <app-item-collection></app-item-collection>
-                <ul>
-                    <li>hello</li>
-                </ul>
+                
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                            Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                            Custom content goes here Custom content goes here Custom content goes here
+                        </app-card-collapsible>
+                    </div>
+                    <div class="col-6">
+                            <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                                Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                                Custom content goes here Custom content goes here Custom content goes here
+                            </app-card-collapsible>
+                        </div>
+                </div>
+    
+                <div class="row">
+                        <div class="col-12">
+                            <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                                Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                                Custom content goes here Custom content goes here Custom content goes here
+                            </app-card-collapsible>
+                        </div>
+                    </div>
+    
+    
             </div>
     
             <footer class="main-footer-area">

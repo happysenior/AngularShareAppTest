@@ -8,6 +8,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SidebarModule } from 'ng-sidebar';
+import { CardCollapsibleComponent } from './components/card-collapsible/card-collapsible.component';
 
 @NgModule({
   imports: [
@@ -15,8 +16,8 @@ import { SidebarModule } from 'ng-sidebar';
     NgbModule.forRoot(),
     SidebarModule.forRoot()
   ],
-  declarations: [ComponentLibraryComponent, ItemComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],
-  exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent],
+  declarations: [ComponentLibraryComponent, ItemComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent, CardCollapsibleComponent],
+  exports: [ComponentLibraryComponent, ItemCollectionComponent, TopNavComponent, SideNavComponent, CardCollapsibleComponent],
   bootstrap: [ComponentLibraryComponent]
 })
 export class ComponentLibraryModule { }

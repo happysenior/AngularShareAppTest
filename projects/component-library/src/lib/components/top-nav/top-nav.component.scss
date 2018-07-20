@@ -1,6 +1,12 @@
+@import "../../../scss/_functions.scss";
+@import "../../../scss/_variables.scss";
+
 //top-nav user navigation buttons
 .ffm-top-nav {
     min-height:50px;
+    -webkit-box-shadow: $nav-bar-shadow;
+    box-shadow: $nav-bar-shadow;
+    z-index: 1;
 
     .user-nav-item a {
         padding: 0 10px;

@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-title d-flex">
+      <h5>{{title}}</h5>
+      <div class="ml-auto">
+        <div *ngIf="isCollapsible">
+          <button class="btn btn-util" (click)="isCollapsed=!isCollapsed">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!isCollapsed">
+      <!-- Add card-collapsible conent here -->
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

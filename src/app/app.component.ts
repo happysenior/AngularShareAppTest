@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  public _opened: boolean = true;
+ 
+  public _toggleSidebar() {
+    this._opened = !this._opened;
+  }
 }

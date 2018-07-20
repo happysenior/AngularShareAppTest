@@ -19,7 +19,8 @@ $dark-text: $tundora;
 $light-text: $white;
 
 //shadows
-$container-shadow:  0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+$nav-bar-shadow:    0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); //nav bar - same as buttons - TODO: check if change required to shadow
+$container-shadow:  0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08); //alternate shadows - less but refined
 $modal-shadow:      0 2px 10px rgba(0,0,0,.2);
 $idle-button-shadows: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 $active-button-shadow: 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
