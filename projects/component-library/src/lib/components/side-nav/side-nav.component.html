@@ -1,18 +1,44 @@
 <!-- Container for sidebar(s) + page content -->
 <ng-sidebar-container style="height: calc(100vh - 50px);">
 
-    <!-- A sidebar -->
-    <ng-sidebar class="custom" [(opened)]="_opened" position='left' dock='true' dockedSize='50px' mode='push'>
-        <ul>
-            <li>Menu Item</li>
-            <li>Menu Item</li>
-            <li>Menu Item</li>
-        </ul>
-    </ng-sidebar>
-
-    <!-- Page content -->
-    <div ng-sidebar-content>
-        <button (click)="_toggleSidebar()">Toggle sidebar</button>
-        <app-item-collection></app-item-collection>
-    </div>
-</ng-sidebar-container>
+        <!-- A sidebar -->
+        <ng-sidebar class="custom" [(opened)]="_opened" opened='true' position='left' dock='true' dockedSize='50px' mode='push'>
+            <ul>
+                <li class="nav-item user-nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-question-circle"></i> Item 1</a>
+                </li>
+                <li class="nav-item user-nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-bell"></i> Item 1</a>
+                </li>
+                <li class="nav-item user-nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-map-marker"></i> Item 1</a>
+                </li>
+                <li class="nav-item user-nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-user"></i> Item 1</a>
+                </li>
+                <li class="nav-item user-nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-comment"></i> Item 1</a>
+                </li>
+            </ul>
+        </ng-sidebar>
+    
+        <!-- Page content -->
+        <div ng-sidebar-content>
+            <div class="main-content-area">
+                <button (click)="_toggleSidebar()">Toggle sidebar</button>
+                <app-item-collection></app-item-collection>
+                <ul>
+                    <li>hello</li>
+                </ul>
+            </div>
+    
+            <footer class="main-footer-area">
+                Footer area
+            </footer>
+        </div>
+    </ng-sidebar-container>

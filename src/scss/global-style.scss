@@ -48,13 +48,32 @@ html, body {
 }
 
 
-.ng-sidebar {
-    background: red;
-    width: 13rem;
+.main-content-area {
+    background-color: $content-area-bg;
+    min-height: calc(100vh - 114px);
 }
 
 .ng-sidebar--left {
-    color: red !important;
-    background: antiquewhite;
+    background: $side-nav-bg;
     width: 12rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        a {
+            padding-left: 20px;
+            color: black;
+
+            i {
+                padding-right: 13px;
+                width: 20px;
+            }
+        }
+
+    }
+}
+
+.main-footer-area {
+    height: 50px;
 }

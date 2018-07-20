@@ -1,23 +1,3 @@
-//TODO: remove this - only for testing the lightness() function
-$grey-color: #f3f3f3;
-$grey-color2: rgb(209, 209, 209);
-$grey-color3: rgb(173, 173, 173);
-$grey-color4: rgb(129, 129, 129);
-$grey-color5: rgb(85, 85, 85);
-$grey-color6: rgb(53, 53, 53);
-$yellow-color: rgb(255, 238, 0);
-$yellow-color2: rgb(226, 211, 0);
-$yellow-color3: rgb(182, 170, 0);
-$yellow-color4: rgb(175, 164, 0);
-$yellow-color5: rgb(139, 130, 0);
-$yellow-color6: rgb(85, 79, 0);
-$green-color: rgb(0, 255, 98);
-$green-color2: rgb(0, 224, 86);
-$green-color3: rgb(0, 199, 76);
-$green-color4: rgb(0, 148, 57);
-$green-color5: rgb(0, 100, 38);
-$green-color6: rgb(0, 43, 16);
-
 //ffm colour palette
 $hero-green: rgb(0, 123, 75);
 $yellow: rgb(253, 218, 36);
@@ -33,6 +13,10 @@ $gallery:       rgb(238, 238, 238);     //content area background colour
 $aqua-haze:     rgb(244, 246, 249);     //side menu background colour
 $darken:        rgba(0,0,0,0.15);       //possible child menu items
 $blue:          rgb(0, 123, 255);      //bootstrap blue for links
+
+//text colours
+$dark-text: $tundora;
+$light-text: $white;
 
 //shadows
 $container-shadow:  0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
@@ -54,4 +38,8 @@ $success: $light-green;
 $warning: $ffm-primary-2;
 $link-color: $blue;
 $dark: $ffm-secondary-3;
+
+//sidebar
+$side-nav-bg: $aqua-haze;
+$content-area-bg: $gallery;
 

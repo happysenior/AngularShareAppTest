@@ -1,87 +1,32 @@
 @import "../../../scss/_functions.scss";
 @import "../../../scss/_variables.scss";
 
-.app-bg-grey {
-    background-color:$grey-color;
-    color: set-text-color($grey-color);
-}
-.app-bg-grey2 {
-    background-color:$grey-color2;
-    color: set-text-color($grey-color2);
-}
-.app-bg-grey3 {
-    background-color:$grey-color3;
-    color: set-text-color($grey-color3);
-}
-.app-bg-grey4 {
-    background-color:$grey-color4;
-    color: set-text-color($grey-color4);
-}
-.app-bg-grey5 {
-    background-color:$grey-color5;
-    color: set-text-color($grey-color5);
-}
-.app-bg-grey6 {
-    background-color:$grey-color6;
-    color: set-text-color($grey-color6);
-}
-.app-bg-yellow {
-    background-color:$yellow-color;
-    color: set-text-color($yellow-color);
-}
-.app-bg-yellow2 {
-    background-color:$yellow-color2;
-    color: set-text-color($yellow-color2);
-}
-.app-bg-yellow3 {
-    background-color:$yellow-color3;
-    color: set-text-color($yellow-color3);
-}
-.app-bg-yellow4 {
-    background-color:$yellow-color4;
-    color: set-text-color($yellow-color4);
-}
-.app-bg-yellow5 {
-    background-color:$yellow-color5;
-    color: set-text-color($yellow-color5);
-}
-.app-bg-yellow6 {
-    background-color:$yellow-color6;
-    color: set-text-color($yellow-color6);
-}
-.app-bg-green {
-    background-color:$green-color;
-    color: set-text-color($green-color);
-}
-.app-bg-green2 {
-    background-color:$green-color2;
-    color: set-text-color($green-color2);
-}
-.app-bg-green3 {
-    background-color:$green-color3;
-    color: set-text-color($green-color3);
-}
-.app-bg-green4 {
-    background-color:$green-color4;
-    color: set-text-color($green-color4);
-}
-.app-bg-green5 {
-    background-color:$green-color5;
-    color: set-text-color($green-color5);
-}
-.app-bg-green6 {
-    background-color:$green-color6;
-    color: set-text-color($green-color6);
+.main-content-area {
+    background-color: $content-area-bg;
+    min-height: calc(100vh - 114px);
 }
 
-
-.ng-sidebar {
-    background: red;
-    width: 13rem;
-}
-
-.ng-sidebar--right {
-    color: red !important;
-    background: antiquewhite;
+.ng-sidebar--left {
+    background: $side-nav-bg;
     width: 12rem;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        a {
+            padding-left: 20px;
+            color: $tundora
+
+            i {
+                padding-right: 13px;
+                width: 20px;
+            }
+        }
+
+    }
+}
+
+.main-footer-area {
+    height: 50px;
 }
