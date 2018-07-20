@@ -29,3 +29,29 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Create component in component library
 
 ng generate component components/<compName> --project=component-library
+
+## Replacing CSS with SCSS
+
+Angular 6 comes with its own sass pre-processor so there is no need to install any processing components. Steps taken to switch css to scss:
+1. Add schematics to include scss to new generated components
+```typescript
+"schematics": {
+      "@schematics/angular:component": {
+        "styleext": "scss"
+      }
+    },
+```
+2 Change all css files to scss and all of their references.
+3 Private scss files begin with an underscore `_variables.scss`. This will prevent from all scss files generating their own css. You then need to reference these files in your global style scss file like this `@import 'variables', 'functions', 'typography';` Note, referencing files like this only works if they are in the root folder unless that containing folder is listed in your angular.json under `stylePreprocessorOptions`. For example:
+```typescript
+"stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
+```
+
+## Navigation
+
+Top nav component is a non-collapsible bootstrap menu.
+Side nav uses `ng-sidebar` module accessed here: https://www.npmjs.com/package/ng-sidebar.
