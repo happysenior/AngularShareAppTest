@@ -12,7 +12,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. Go to `cd C:\Data\Angular-shared\shared-app\projects\component-library` and run `ng build component-library` to build the shared component library. 
+3. Then go to `cd C:\Data\Angular-shared\shared-app` and run `ng serve`. 
+
+Every time you make changes to a component inside the component-library, you will need to follow step 2.
 
 ## Running unit tests
 
