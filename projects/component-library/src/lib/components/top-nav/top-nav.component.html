@@ -2,6 +2,8 @@
 <nav class="navbar bg-dark navbar-dark ffm-top-nav">
     <!-- Brand/logo -->
     <a class="navbar-brand" href="#">FFMVic Prototype</a>
+    <button (click)="toggleSidebar()" class="btn btn-outline-light" style="position:absolute;left:190px;">Toggle sidebar</button>
+                
 
     <!-- Links -->
     <ul class="navbar-nav d-flex flex-row-reverse">
@@ -25,5 +27,15 @@
             <a class="nav-link" href="#">
                 <i class="fa fa-comment"></i></a>
         </li>
+        <!-- <li class="nav-item">
+            <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button class="dropdown-item">Action - 1</button>
+                    <button class="dropdown-item">Another Action</button>
+                    <button class="dropdown-item">Something else is here</button>
+                </div>
+            </div>
+          </li> -->
     </ul>
 </nav>

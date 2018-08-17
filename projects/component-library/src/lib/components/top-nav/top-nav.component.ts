@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-top-nav',
@@ -7,18 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
-  title = 'FFMVic Events Prototype';
-
-  public _opened: boolean = false;
- 
-  public _toggleSidebar() {
-    this._opened = !this._opened;
-  }
+  @Output()
+  public toggleClicked: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { 
   }
 
   ngOnInit() {
+  }
+
+  public toggleSidebar() {
+    this.toggleClicked.emit();
   }
 
 }

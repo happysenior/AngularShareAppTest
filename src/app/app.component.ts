@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { SideNavComponent } from 'component-library';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  public _opened: boolean = true;
- 
-  public _toggleSidebar() {
-    this._opened = !this._opened;
+  @ViewChild(SideNavComponent)
+  sideNavComponent: SideNavComponent;
+
+  private handleTopNavToggle(){
+    //this._opened = !this._opened;
+    this.sideNavComponent._toggleSidebar();
   }
 }
