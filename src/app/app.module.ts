@@ -7,10 +7,12 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SidebarModule } from 'ng-sidebar';
 
 import { AppComponent } from './app.component';
+import { SideNavAndContentComponent } from './side-nav-and-content/side-nav-and-content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SideNavAndContentComponent
   ],
   imports: [
     BrowserModule,

@@ -79,7 +79,6 @@ html, body {
 //alters bootstrap default row and column padding and margin within the content area only
 .main-content-area {
     background-color: $content-area-bg;
-    min-height: calc(100vh - 114px);
     padding: 10px 20px 20px 20px;
 
     & > .row {

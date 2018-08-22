@@ -2,7 +2,7 @@
 <ng-sidebar-container style="height: calc(100vh - 50px);">
 
         <!-- A sidebar -->
-        <ng-sidebar #ngSidebar class="" [ngClass]="{'menu-items-dock-hover': _menuIconsPushed }" [(opened)]="_opened" opened='true' position='left' dock='true' dockedSize='50px' mode='push' (mouseenter)="_toggleSidebarHover()" (mouseleave)="_toggleSidebarLeave()">
+        <ng-sidebar #ngSidebar class="ffm-left-nav" [ngClass]="{'menu-items-dock-hover': _menuIconsPushed }" [(opened)]="_opened" opened='true' position='left' dock='true' dockedSize='50px' mode='push' (mouseenter)="_toggleSidebarHover()" (mouseleave)="_toggleSidebarLeave()">
             <ul>
                 <li class="nav-item user-nav-item">
                     <a class="nav-link" href="#">

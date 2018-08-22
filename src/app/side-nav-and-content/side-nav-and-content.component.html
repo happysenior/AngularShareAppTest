@@ -1,0 +1,61 @@
+<div class="main-container">
+ <div id="mySidenav" class="sidenav">
+    <ul>
+      <li class="nav-item user-nav-item">
+          <a class="nav-link" href="#">
+              <i class="fa fa-question-circle"></i> Item 1</a>
+      </li>
+      <li class="nav-item user-nav-item">
+          <a class="nav-link" href="#">
+              <i class="fa fa-bell"></i> Item 2</a>
+      </li>
+      <li class="nav-item user-nav-item">
+          <a class="nav-link" href="#">
+              <i class="fa fa-map-marker"></i> Item 3</a>
+      </li>
+      <li class="nav-item user-nav-item">
+          <a class="nav-link" href="#">
+              <i class="fa fa-user"></i> Item 4</a>
+      </li>
+      <li class="nav-item user-nav-item">
+          <a class="nav-link" href="#">
+              <i class="fa fa-comment"></i> Item 5</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="right-col">
+    <div id="main" class="main-content-area">
+
+        <span style="font-size:30px;cursor:pointer">&#9776; open</span>
+      
+      <div class="row mb-3">
+          <div class="col-6">
+              <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                  Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                  Custom content goes here Custom content goes here Custom content goes here
+              </app-card-collapsible>
+          </div>
+          <div class="col-6">
+                  <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                      Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                      Custom content goes here Custom content goes here Custom content goes here
+                  </app-card-collapsible>
+              </div>
+      </div>
+
+      <div class="row mb-3">
+          <div class="col-12">
+              <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                  Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                  Custom content goes here Custom content goes here Custom content goes here
+              </app-card-collapsible>
+          </div>
+      </div>
+    </div>  
+    <footer class="main-footer-area">
+        Footer area
+    </footer>
+  </div>
+</div> 
+  

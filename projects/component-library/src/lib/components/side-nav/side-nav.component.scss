@@ -3,10 +3,29 @@
 
 .menu-items-dock-hover ul a i{
     position: absolute;
-    left: 138px;
+    left: 132px;
 }
 
-.ng-sidebar--left ul a i {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.3, 1);
-    transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+.ffm-left-nav {
+    ul {
+        a { 
+            padding-left: 14px;
+
+            i {
+                -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+                transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
+                width: 26px;
+                opacity: .99;
+                display: inline-block;
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-align: center;
+                font-size: 16px;
+                -webkit-font-smoothing: antialiased;
+                padding-right: 0px;
+                margin-right: 8px;
+            }
+        }
+    }
 }

@@ -1,0 +1,65 @@
+.sidenav {
+    width: 240px;
+    float: left;
+    background-color: #111;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    max-width: 256px!important;
+    min-width: 256px!important;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    position: relative;
+    margin-top: 0;
+    min-height: 1px;
+    float: left;
+}
+
+.sidenav ul {
+    padding-left: 0px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+
+    li {
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+}
+
+.main-content-area {
+    background-color: #eeeeee;
+    padding: 10px 20px 20px 20px;
+    min-height: calc(100vh - 100px);
+}
+
+.main-footer-area {
+    background-color: white;
+}
+
+//main container that includes all elements except top nav
+.main-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%!important;
+    min-height: calc(100vh - 50px);
+}
+
+// use class when docked menu
+.docked {
+    position: fixed;
+}
