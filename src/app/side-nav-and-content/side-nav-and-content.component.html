@@ -1,5 +1,5 @@
 <div class="main-container">
- <div id="mySidenav" class="sidenav">
+ <div id="mySidenav" class="sidenav {{SideNavToggleClass}} {{SideNavHoverToggleClass}}" (mouseenter)="_toggleSidebarHover()" (mouseleave)="_toggleSidebarLeave()">
     <ul>
       <li class="nav-item user-nav-item">
           <a class="nav-link" href="#">
@@ -24,11 +24,13 @@
     </ul>
   </div>
 
-  <div class="right-col">
+  <div class="right-col {{ContentToggleClass}}">
     <div id="main" class="main-content-area">
-
-        <span style="font-size:30px;cursor:pointer">&#9776; open</span>
-      
+      <div class="row mb-3">
+        <div class="col-12">
+          <button (click)="toggleSidenav()" class="btn btn-outline-primary">Toggle sidebar</button>
+        </div>
+      </div>
       <div class="row mb-3">
           <div class="col-6">
               <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
@@ -37,21 +39,182 @@
               </app-card-collapsible>
           </div>
           <div class="col-6">
-                  <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
-                      Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
-                      Custom content goes here Custom content goes here Custom content goes here
-                  </app-card-collapsible>
-              </div>
-      </div>
-
-      <div class="row mb-3">
-          <div class="col-12">
               <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
                   Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
                   Custom content goes here Custom content goes here Custom content goes here
               </app-card-collapsible>
           </div>
       </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+            <div class="col-6">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <app-card-collapsible [title]="'Custom Component'" [isCollapsible]="true">
+                    Custom content goes here Custom content goes here Custom content goes here Custom content goes here Custom content goes here
+                    Custom content goes here Custom content goes here Custom content goes here
+                </app-card-collapsible>
+            </div>
+        </div>
     </div>  
     <footer class="main-footer-area">
         Footer area

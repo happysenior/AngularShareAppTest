@@ -13,7 +13,6 @@ export class AppComponent {
   sideNavComponent: SideNavComponent;
 
   private handleTopNavToggle(){
-    //this._opened = !this._opened;
     this.sideNavComponent._toggleSidebar();
   }
 }

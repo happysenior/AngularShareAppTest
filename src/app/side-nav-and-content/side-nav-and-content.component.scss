@@ -1,54 +1,18 @@
-.sidenav {
-    width: 240px;
-    float: left;
-    background-color: #111;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
-    max-width: 256px!important;
-    min-width: 256px!important;
-    -webkit-transition-duration: .15s;
-    transition-duration: .15s;
-    position: relative;
-    margin-top: 0;
-    min-height: 1px;
-    float: left;
+.style1 a {
+    color: red;
+}
+.style-2 a {
+    color: purple;
+}
+.style-3 a {
+    color: black;
 }
 
-.sidenav ul {
-    padding-left: 0px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    text-overflow: ellipsis;
-    flex-shrink: 0;
 
-    li {
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-}
+// Containers
+// **********
 
-.main-content-area {
-    background-color: #eeeeee;
-    padding: 10px 20px 20px 20px;
-    min-height: calc(100vh - 100px);
-}
-
-.main-footer-area {
-    background-color: white;
-}
-
-//main container that includes all elements except top nav
+// main container that includes Side Nav + Content Area
 .main-container {
     display: -webkit-box;
     display: -moz-box;
@@ -57,9 +21,145 @@
     display: flex;
     width: 100%!important;
     min-height: calc(100vh - 50px);
+} 
+
+// Side Nav - Open
+// **********
+.sidenav-opened {
+    max-width: 250px!important;
+    min-width: 250px!important;
 }
 
+// Side navigation
+.sidenav {
+    background-color: #fff;
+    // display: -webkit-box;
+    // display: -moz-box;
+    // display: -webkit-flex;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -webkit-flex-direction: column;
+    // flex-direction: column;
+    // -webkit-flex-shrink: 0;
+    max-width: 0px;
+    min-width: 0px;
+    // -webkit-transition-duration: .15s;
+    // transition-duration: .15s;
+    // position: relative;
+    // margin-top: 0;
+    // min-height: 1px;
+    // float: left;
+
+    ul {
+        padding-left: 0px;
+        // width: 100%;
+        // white-space: nowrap;
+        list-style-type: none;
+        // display: flex;
+        // flex-direction: column;
+        // text-overflow: ellipsis;
+        // flex-shrink: 0;
+    
+        li {
+
+            a {
+                color: #242424;
+            }
+        }
+    }
+}
+
+// Side Nav - Docked
+// *****************
+
 // use class when docked menu
-.docked {
+.side-nav-docked {
     position: fixed;
+    display: block;
+    list-style-type: none;
+    max-width: 70px;
+    min-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: white;
+    z-index: 1;
+    height: 100%;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+}
+
+// Side Nav - Hover
+// *****************
+
+// Side Nav when hovering on it
+.sidenav-hover-open {
+    max-width: 240px;
+    min-width: 240px;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+}
+
+// Side Nav - Closed
+// *****************
+
+// Side Nav closed
+.sidenav-closed {
+    max-width: 0;
+    min-width: 0;
+}
+
+// Content Area
+// ************
+
+// Container for content area
+.right-col {
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: relative;
+    width: 100%;
+}
+
+// Content area inside right-col container
+.main-content-area {
+    background-color: #eeeeee;
+    padding: 10px 20px 20px 20px;
+}
+
+// Content Area - Docked/Hover
+// ***************************
+
+// Container for content area
+.right-col-when-docked {
+    margin-left: 70px;
+}
+
+// Content Area - Closed
+.right-col-when-closed {
+    margin-left: 0px;
+}
+
+
+// Footer
+.main-footer-area {
+    background-color: white;
+}
+// ---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+.transition-class {
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    -webkit-transition-property: background-color,box-shadow;
+    transition-property: background-color,box-shadow;
+    -webkit-transition-timing-function: cubic-bezier(0.4,0.0,0.2,1);
+    transition-timing-function: cubic-bezier(0.4,0.0,0.2,1);
 }
